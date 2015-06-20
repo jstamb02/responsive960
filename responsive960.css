@@ -1,0 +1,86 @@
+/* Fix the width of the body */
+
+.row {
+width:960px;
+margin:0 auto;
+}
+
+/* Columns */
+.col_12, .col_11, .col_10, .col_9, .col_8, .col_7, .col_6, .col_5, .col_4, .col_3, .col_2, .col_1 {
+margin-left: 1%;
+margin-right: 1.6%;
+display: inline;
+float: left;
+}
+
+/* First and Last */
+.first {
+margin-left:0;
+}
+
+.last {
+margin-right:0;
+}
+
+/* Column widths taking into account the margins */
+.col_12 {width:98%;}
+.col_11 {width:89%;}
+.col_10 {width:81%;}
+.col_9 {width:73%;}
+.col_8 {width:64%;}
+.col_7 {width:56%;}
+.col_6 {width:48%;}
+.col_5 {width:39%;}
+.col_4 {width:31%;}
+.col_3 {width:23%;}
+.col_2 {width:14%;}
+.col_1 {width:6%;}
+
+
+/*****************/
+/* MEDIA QUERIES */
+/*****************/
+
+/* Tablet Screen Sizes */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+/* Resize the body */
+body {min-width:767px;}
+
+/* Resize the row */
+.row {width:100%;}
+
+.col_12, .col_11, .col_10, .col_9, .col_8, .col_7, .col_6, .col_5, .col_4, .col_3, .col_2, .col_1 {
+margin-left: 1%;
+margin-right: 1%;
+display: inline;
+float: left;
+}
+
+/* Bring columns down to four */
+.col_12, .col_11, .col_10, {width:97%;} /* Full width */
+.col_9, .col_8, .col_7 {width:72%;} /* 3/4 width */
+.col_6, .col_5, .col_4 {width:47%;} /* 1/2 width */
+.col_3, .col_2, .col_1 {width:22%;} /*1/4 width */
+}
+
+/* Mobile Screen Sizes */
+@media only screen and (max-width: 767px) {
+/* Resize the body */
+body {width: 100%;}
+
+/* Resize the row */
+.row {width:99%;}
+
+/* Resize the columns */
+.col_12, .col_11, .col_10, .col_9, .col_8, .col_7, .col_6, .col_5, .col_4, .col_3, .col_2, .col_1 {
+  width: 95%;
+  margin: 0 auto;
+}
+
+
+.first, .last {
+margin: 0 auto;
+}
+
+}
+

@@ -43,10 +43,8 @@ margin-right:0;
 
 /* Tablet Screen Sizes */
 @media only screen and (min-width: 768px) and (max-width: 959px) {
-/* Resize the body */
-body {min-width:767px;}
 
-/* Resize the row */
+
 .row {width:100%;}
 
 .col_12, .col_11, .col_10, .col_9, .col_8, .col_7, .col_6, .col_5, .col_4, .col_3, .col_2, .col_1 {
@@ -65,13 +63,10 @@ float: left;
 
 /* Mobile Screen Sizes */
 @media only screen and (max-width: 767px) {
-/* Resize the body */
-body {width: 100%;}
 
-/* Resize the row */
 .row {width:99%;}
 
-/* Resize the columns */
+/* Resize columns */
 .col_12, .col_11, .col_10, .col_9, .col_8, .col_7, .col_6, .col_5, .col_4, .col_3, .col_2, .col_1 {
   width: 95%;
   margin: 0 auto;
